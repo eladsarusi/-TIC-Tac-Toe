@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./src/css/main.css" />
+</head>
+<body>
+
+<div class="page">
+  <div class="header">       
+        <div class="names"></div>
+        <div class="playersBox">
+            <div class="player1">
+                <lable>Player 1:</lable>
+                <input type="text" class="input" id="playerOneInput" required>
+            </div>
+            <div class="player2Box none">
+                <lable>Player 2:</lable>
+                <input type="text" class="input"  id="playerTwoInput" required>
+            </div>
+      </div>
+      <div class="modeBox">
+          <h3>choose your mode</h3>
+          <label><input type="radio" name="statusMode" id="onePlayerMode" value="1" checked>One Player</label>
+          <label><input type="radio" name="statusMode" id="twoPlayersMode" value="2">Two Player</label>
+          <div class="status-mode">
+            <label><input  type="radio"  name="levelMode" id="randomMode" value="r">Random mode</label>
+            <label><input  type="radio"  name="levelMode" id="hardMode"   value="h" checked>Hard Mode</label>
+          </div>
+      </div>
+      <br>
+      <div class="btns">
+            <button class="btn-game" id="start">Start</button>
+            <button id="restart">Restart Game</button>
+            <button id="reload">New Game</button>
+      </div>
+      
+    </div>
+    
+    <div class="boxes">
+        <div class="box" id="box11" ></div>
+        <div class="box" id="box12" ></div>
+        <div class="box" id="box13" ></div>
+        <div class="box" id="box21" ></div>
+        <div class="box" id="box22" ></div>
+        <div class="box" id="box23" ></div>
+        <div class="box" id="box31" ></div>
+        <div class="box" id="box32" ></div>
+        <div class="box" id="box33" ></div>
+    </div>
+   
+</div>
+
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
